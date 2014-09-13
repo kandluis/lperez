@@ -1,0 +1,841 @@
+/* ----------USED FONTS -------------------------------------- */
+@font-face {
+  font-family: 'Socialico';
+  src: url('/assets/fonts/socialico.eot');
+  src:  url('/assets/fonts/socialico.eot?#iefix') format('embedded-opentype'), 
+        url('/assets/fonts/socialico.woff') format('woff'), 
+        url('/assets/fonts/socialico.ttf') format('truetype'), 
+        url('/assets/fonts/socialico.svg#socialicoregular') format('svg'),
+        url('/assets/fonts/socialico.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* General Styles for page */
+body {
+  background-color: #fbfbfb;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-weight: 300;
+  font-size: 16px;
+}
+
+#main {
+  margin-top: 75px;
+  width: 90%;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+
+.page {
+  width: 95%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 100px;
+  border-top: 3px solid rgb(64,110,160);
+  display: none;
+}
+
+.fade {
+  float: left;
+  margin: 0px 60px 60px 60px;
+  width: 325px;
+  opacity: 1;
+}
+
+.fade img {
+  width: 325;
+  height: 350;
+}
+
+.toggler {
+  margin-top: 0px;
+  float: right;
+}
+
+.toggle-visible {
+  display: block;
+  /* margin: 0 0 10px 25px; */
+}
+
+.toggle-hidden {
+  display: none;
+  margin: 0 0 10px 25px;
+}
+
+.content {
+  margin-left: 65px;
+  margin-right: 65px;
+}
+
+.content p {
+  line-height: 16px;
+  font-size: 18px;
+}
+
+.content h3 {
+  font-size: 38px;
+}
+
+/* CUSTOMIZE THE HEADER
+-------------------------------------------------- */
+
+#header {
+  border-bottom: 3px solid rgb(64,110,160);
+  position: relative;
+}
+
+/* Customize the name: larger font and greying colour */
+#header .brand {
+  font-family: 'Lato', sans-serif;
+    color: #E7EEF7;
+    font-size: 33px;
+    padding-bottom: 20px;
+    padding-top: 20px;
+    margin: 0px;
+}
+
+/*  Center navbar : shifted down for appearace */
+#header .nav {
+  position: relative;
+  margin-bottom: 10px;
+  margin-top: 5px;
+  font-family: 'Lily Script One', cursive;
+  font-size: 24px;
+}
+
+#header .nav li {
+  margin-left: 20px;
+}
+
+/* Customize the footer with right size. Faded color */
+#footer {
+  font-size: 13px;
+  color: #999;
+  text-align: center;
+  padding-top: 30px;
+  padding-bottom: 20px;
+  display: none;
+}
+
+
+/* Larger header with correct font */
+h2 {
+  color: #268eb4;
+  font-size: 28px;
+  margin-bottom: 0.25em;
+  text-transform: uppercase;
+  padding: 0.25em 0;
+  font-family: 'Lato', cursive;
+}
+
+/* CUSTOMIZE THE NAVBAR
+-------------------------------------------------- */
+
+/* Special class on .container surrounding .navbar, used for positioning it into place. */
+.navbar-wrapper {
+  position: absolute;
+  top: 0;
+  z-index: 10;
+  margin-top: 0px;
+  margin-bottom: -90px; /* Negative margin to pull up carousel. 90px is roughly margins and height of navbar. */
+}
+
+.navbar-wrapper .container {
+  width: 100% ;
+}
+
+/* Remove border and change up box shadow for more contrast */
+.navbar .navbar-inner {
+  border: 0;
+  -webkit-box-shadow: 0 2px 10px rgba(0,0,0,.25);
+  -moz-box-shadow: 0 2px 10px rgba(0,0,0,.25);
+  box-shadow: 0 2px 10px rgba(0,0,0,.25);
+}
+
+/* Downsize the brand/project name a bit */
+.navbar .brand {
+  font-weight: bold;
+  text-shadow: 0 -1px 0 rgba(0,0,0,.5);
+}
+
+/* Navbar links: increase padding for taller navbar */
+.navbar .nav > li > a {
+  padding: 15px 20px;
+}
+
+/* Offset the responsive button for proper vertical alignment */
+.navbar .btn-navbar {
+  margin-top: 13px;
+}
+
+/* Lock navbar on top position of screen */
+.navbar-fixed {
+  position: fixed;
+  width: 100%;
+  z-index: 1030;
+}
+
+/* Add custom CSS responsiveness to navbar */
+@media (max-width: 979px) {
+
+  .navbar-inverse .nav-collapse .nav>li>a:hover, .navbar-inverse .nav-collapse .nav>li>a:focus, .navbar-inverse .nav-collapse .dropdown-menu a:hover, .navbar-inverse .nav-collapse .dropdown-menu a:focus {
+    color: #fff;
+  }
+
+  .navbar-inverse .nav .active>a, .navbar-inverse .nav .active>a:hover, .navbar-inverse .nav .active>a:focus {
+    color: #fff !important;
+  }
+
+}
+
+/* CUSTOMIZE Individual pages
+-------------------------------------------------- */
+
+/* Color and padding for visible page */
+.show {
+  background-color: #268eb4;
+  padding: 10px 30px;
+  padding-right: 0px;
+  color: #fff;
+}
+
+.show h2 {
+  text-transform: none;
+  font-size: 70px;
+  font-weight: 700;
+  color: #fff;
+}
+
+.show p {
+  font-weight: 200;
+  font-size: 32px;
+  line-height: 1.25em;
+}
+
+/* About Me */
+#about_page {
+  margin: auto
+}
+
+#about_me {
+  margin-top: 20px;
+  padding-top: 20px;
+  width: 98%;
+}
+
+#about_photo {
+  float: left;
+  display: block;
+  margin: 0 20px 0 0;
+  width: 325px;
+  height: auto;
+}
+
+#about_me h3 {
+  margin-top: 0; 
+  padding-top: 0; 
+  line-height: 1em; 
+  margin-bottom: 25px;
+  font-size: 38px;
+  font-weight: 800;
+}
+
+#about_me p {
+  font-size: 20px;
+  line-height: 1.5em;
+  font-weight: 250;
+}
+
+
+/* Resume */
+#download {
+  text-align: left;
+  margin-top: 30px;
+  margin-bottom: 20px;
+}
+
+#download a {
+  padding: 10px;
+  background: #268eb4;
+  color: #FFF !important;
+  
+  /*
+  /*Rounded Corners
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  border-radius: 10px;
+  */
+
+  /*Gradient*/
+  background-image: -webkit-linear-gradient(top, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.2));
+  background-image: -moz-linear-gradient(top, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.2));
+  background-image: -o-linear-gradient(top, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.2));
+  background-image: -ms-linear-gradient(top, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.2));
+  background-image: linear-gradient(top, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.2));
+  
+  /*Shadow*/
+  -webkit-box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.2);
+  -moz-box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.2);
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.2);
+    
+  /*Transition*/
+  -webkit-transition: All 0.3s ease;
+  -moz-transition: All 0.3s ease;
+  -o-transition: All 0.3s ease;
+  -ms-transition: All 0.3s ease;
+  transition: All 0.3s ease;
+}
+
+#download a:hover {
+  background: #1b1b1b;
+  
+  text-decoration: none;
+
+  /*Gradient*/
+  background-image: -webkit-linear-gradient(top, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.2));
+  background-image: -moz-linear-gradient(top, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.2));
+  background-image: -o-linear-gradient(top, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.2));
+  background-image: -ms-linear-gradient(top, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.2));
+  background-image: linear-gradient(top, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.2));
+
+}
+
+#download a:focus, {
+  text-decoration: none;
+}
+
+#resume_page .left { 
+  padding-right: 20px; 
+}
+
+#resume_page .right {
+  padding-left: 20px;
+}
+
+#resume_page .container-fluid {
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+} 
+
+#resume_page .detailed-description {
+  margin: 10px 0 0px;
+  font-size: 0.9em;
+}
+
+#resume_page p strong {
+  color: #fff;
+  font-weight: 400;
+}
+
+.information_box {
+  margin-top: 20px;
+  margin-bottom: 30px;
+  position: relative;
+}
+
+.information_box h4 {
+  padding: 0;
+  padding-bottom: 5px;
+  margin: 0;
+  font-family: 'Lato', sans-serif;
+}
+
+.information_box .employer, .information_box .date {
+  font-size: 17px;
+  font-style: italic;
+  font-family: 'Dosis', sans-serif;
+  font-weight: 200;
+}
+
+.information_box .date {
+  font-style: normal;
+}
+
+.information_box .description {
+  margin-top: 10px;
+}
+
+.information_box ul {
+  margin-top: 10px;
+}
+
+.information_box .detail i {
+  margin-left: 3px;
+}
+
+.information_box .btn-link:hover {
+  text-decoration: none;
+}
+
+.toolbox ul {
+  padding: 0;
+  list-style: none;
+  margin: 0;
+}
+
+.toolbox ul > li {
+  display: inline-block;
+  background: #1b1b1b;
+  color: #fff;
+  font-size: 0.9em;
+  padding: 4px 8px;
+  margin: 0 8px 10px 0;
+}
+
+/*
+#showcase {
+  min-height: 340px;
+  position: relative;
+  padding: 20px 10px;
+}
+
+#showcase .project_img {
+  position: absolute;
+  right: 30px;
+  top: 30px;
+  margin: 0 auto;
+}
+
+#showcase .project_img img {
+  max-width: 425px;
+  width: 95%;
+  display: block;
+  margin: 0 auto;
+}
+
+#showcase .project_descrip {
+  position: absolute;
+  left: 30px;
+  top: 30px;
+  width: 400px;
+  margin: 20px auto;
+}
+
+#showcase h2 {
+  font-size: 34px;
+  padding: 0; margin: 0;
+  line-height: 1em;
+}
+
+#showcase h4 {
+  margin-top: 5px;
+  margin-bottom: 20px;
+}
+
+#showcase p {
+  font-size: 17px;
+  text-align: left;
+}
+
+#showcase a {
+  color: #fff;
+  text-decoration: underline;
+}
+
+#showcase .view_project {
+  margin-top: 30px;
+}
+
+#showcase .view_project a {
+  text-decoration: none;
+  font-family: "Lato", sans-serif;
+  margin-right: 15px;
+}
+
+#showcase .view_project i {
+  position: relative;
+  top: 2px;
+  left: 3px;
+}
+
+#showcase .project {
+  display: none;
+}
+
+#projects {
+  padding-top: 30px;
+  text-align: center;
+  font-weight: bold;
+}
+
+#projects .thumbnail:hover {
+  cursor: pointer;
+  color: #268eb4;
+}
+
+#projects img {
+  display: block;
+  margin: 0 auto;
+}
+
+#projects h3 {
+  font-size: 16px;
+  font-family: 'Lato', sans-serif;
+  font-weight: 700;
+}
+
+#projects h3 {
+  border-bottom: 3px solid transparent;
+}
+
+#projects .active h3 {
+  color: #268eb4;
+  border-color: #268eb4;
+}
+*/
+#contact_page p {
+  font-size: 19px;
+  line-height: 1.5em;
+  margin-bottom: 30px;
+  width: 85%;
+}
+
+#contact_page h2 {
+  font-size: 25px; 
+}
+
+#contact_page .container-fluid {
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#contact_page #response {
+  margin-top: 40px;
+}
+
+#contact_page a:hover {
+  text-decoration: none;
+}
+
+#contact_page .span5 {
+  margin-top: 40px;
+  padding-right: 50px;
+  margin-bottom: -30px;
+}
+
+#contact_page label {
+  float: left;
+  display: inline-block;
+  width: 100px;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-weight: 300;
+  font-size: 20px;
+}
+
+#contact_page label.error {
+  width: 250px;
+  display: block;
+  float: none;
+  margin-left: 100px;
+  margin-bottom: 20px;
+  color: #f00;
+  font-size: 15px;
+}
+
+#contact_page input {
+  font-family: 'Source Sans Pro', sans-serif;
+}
+
+#contact_page textarea {
+  font-family: 'Source Sans Pro', sans-serif;
+}
+
+#contact_page .cleaner {
+  clear: both;
+}
+
+#contact_page #message {
+  height: 200px;
+  max-width: 325px;
+  width: 95%;
+}
+
+#contact_page #submit {
+  margin-top: 20px;
+}
+
+#contact_page .right {
+  margin-top: 40px;
+  margin-bottom: 60px;
+}
+
+#contact_page .right > a {
+  display: inline-block;
+  position: relative;
+  margin: 17% 0 0 0;
+  font-family: "Socialico";
+  font-size: 4.0em;
+  color: #333333 !important;
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+#contact_page .right > a:hover {
+  display: inline-block;
+  position: relative;
+  top: -10px;
+  left: -10px;
+  font-size: 4.5em;
+}
+
+/* CUSTOMIZE THE CAROUSEL
+-------------------------------------------------- */
+
+/* Carousel base class */
+
+/* Position carousel behind navbard */
+.carousel .container {
+  position: relative;
+  z-index: 9;
+}
+
+.carousel-control {
+  height: 80px;
+  margin-top: 0;
+  font-size: 120px;
+  text-shadow: 0 1px 1px rgba(0,0,0,.4);
+  background-color: transparent;
+  border: 0;
+  z-index: 10;
+}
+
+.carousel .item {
+  height: 500px;
+}
+
+/* Stretch images across page and set fixed height */
+.carousel img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  min-width: 100%;
+  height: 500px;
+}
+
+.carousel-caption {
+  background-color: transparent;
+  position: static;
+  max-width: 550px;
+  padding: 0 20px;
+  margin-top: 200px;
+}
+
+.carousel-caption h1,
+.carousel-caption .lead {
+  margin: 0;
+  line-height: 1.25;
+  color: #fff;
+  text-shadow: 0 1px 1px rgba(0,0,0,.4);
+}
+
+/* Whiten links for better contrast with images */
+.carousel-caption a {
+  color: rgb(255, 255, 255);
+}
+
+/* Slight greying color on hover */
+.carousel-caption a:hover, a:focus {
+  color: rgb(150, 186, 204);
+  text-decoration: underline;
+}
+.carousel-caption .btn {
+  margin-top: 10px;
+}
+
+
+/* RESPONSIVE CSS
+-------------------------------------------------- */
+
+@media (max-width: 979px) {
+
+  /* Shrink whitespace above page content */
+  #main {
+    margin-top: 70px;
+  }
+
+  .page {
+    margin-top: 75px;
+  }
+
+  .navbar-wrapper {
+    margin-top: 20px;
+  }
+  .container.navbar-wrapper {
+    margin-bottom: 0;
+    width: auto;
+  }
+
+  .navbar-inner {
+    border-radius: 0;
+    margin: -20px 0;
+  }
+
+  .carousel .item {
+    height: 500px;
+  }
+
+  .carousel img {
+    width: auto;
+    height: 500px;
+  }
+
+  .carousel-caption {
+    max-width: 450px;
+    padding: 0 60px;
+    margin-top: 100px;
+  }
+}
+
+@media (max-width: 767px) {
+
+  #main {
+    margin-top: 60px;
+  }
+
+  .navbar-inner {
+    margin: -20px;
+  }
+
+  .navbar-fixed {
+    width: 97%;
+  }
+
+  .carousel {
+    margin-left: -20px;
+    margin-right: -20px;
+  }
+
+  .carousel .container {
+
+  }
+
+  .carousel .item {
+    height: 450px;
+  }
+
+  .carousel img {
+    height: 450px;
+  }
+
+  #resume_page .right, #resume_page .left {
+    padding-left: 0px
+  }
+
+  #contact_page .right {
+    margin-right: 10px;
+  }
+}
+
+@media (max-width: 600px) {
+
+  #main {
+    margin-top: 45px;
+  }
+
+  /* Resize Picture dynamically */
+  .fade {
+    width: auto;
+  }
+
+  /* Expand text and center */
+  .content {
+    margin-left: 0px;
+    margin-right: 0px;
+    text-align: center;
+  }
+
+  .navbar-inner {
+    margin: -20px;
+  }
+
+  .carousel {
+    margin-left: -20px;
+    margin-right: -20px;
+  }
+
+  .carousel .container {
+
+  }
+
+  .carousel .item {
+    height: 400px;
+  }
+
+  .carousel img {
+    height: 400px;
+  }
+
+  .carousel-caption {
+    width: 70%;
+    padding: 0 70px;
+    margin-top: 90px;
+  }
+
+  .carousel-caption h1 {
+    font-size: 26px;
+  }
+
+  .carousel-caption .lead,
+  .carousel-caption .btn {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 360px) {
+
+  #main {
+    margin-top: 30px;
+  }
+
+  .fade {
+    margin: 0px 20px 20px 0px;
+    width: auto;
+  }
+
+  .carousel .item {
+    height: 550px;
+  }
+
+  .carousel img {
+    height: 500px;
+  }
+
+  .carousel-caption {
+    width: 65%;
+    padding: 0 55px;
+    margin-top: 80px;
+  }
+
+  #download {
+    text-align: center;
+    margin-top: 20px;
+  }
+
+  #download a {
+    padding: 7px;
+    font-size: 12px;
+  }
+
+  body {
+    padding-bottom: 0px;
+  }
+
+  #resume_page .right, #resume_page .left {
+    text-align: center;
+  }
+
+  #contact_page p {
+    font-size: 17px;
+    text-align: center;
+  }
+}
+
+/* Hide the carousel by default (only show on About Me) */
+#myCarousel {
+  display: none;
+}
