@@ -68,7 +68,7 @@
 								<li id="contact_nav">
 									<a href="#contact">contact</a>
 								</li>
-								<li id="projects_nav">
+                <li id="projects_nav">
 									<a href="#projects">projects</a>
 								</li>
 							</ul>
@@ -168,16 +168,17 @@
 		-->
 		<div id="resume_page" class="page">
 			<div class="container-fluid">
-			  <div id="download">
-			  	<a href="uploads/Luis_Perez-Resume.pdf">
-					<i class=" icon-circle-arrow-down icon-white"></i> Download PDF
-					</a>
-			  </div>
 			  <div class="row-fluid">
 			  	<!--Professional Experience Half -->
 			    <div class="span7 left">
+            <!-- Download Transcript Button-->
+            <div id="download">
+              <a href="uploads/Luis_Perez-Resume.pdf">
+              <i class=" icon-circle-arrow-down icon-white"></i> Download Resume
+              </a>
+            </div>
 			      <h2><span style="color:rgb(247, 84, 227);">exp</span>erience</h2>
-		   	<div class="information_box">
+		   	    <div class="information_box">
             	<h4>Course Assistant</h4>
             	<div class="employer">
             		Harvard University Mathematics Department
@@ -285,6 +286,12 @@
           <!-- End Professional Experience-->
           <!-- Begin Education, Organization, and Skills (Toolbox) -->
 			    <div class="span5 right">
+            <!-- Download Transcript Button-->
+            <div id="download">
+              <a href="uploads/Luis_Perez-Transcript.pdf">
+              <i class=" icon-circle-arrow-down icon-white"></i> Download Transcript
+              </a>
+            </div>
 			      <h2><span style="color:rgb(114, 233, 243);">edu</span>cation</h2>
 			      <div class="information_box">
 			      	<h4>Harvard College</h4>
@@ -457,14 +464,203 @@
 					</div>
 				</div>
 			</div>
-		</div>
-		<!-- end #contact_page -->
-		<!-- project
-			====================================================================
-		-->
-		<div id="project_page" class="page">
-		</div>
-		<!-- end #project_page -->
+  		<!-- end #contact_page -->
+  		<!-- project
+  			====================================================================
+  		-->
+  		<div id="projects_page" class="page">
+        <div class="container-fluid">
+          <div class="intro">
+            <h3>Apologies for the lack of design. Time is not readily available. Instead, here, you will find links to some of the work I've done.</h3>
+          </div>
+          <div class="row-fluid">
+            <!-- Half Of Screen -->
+            <div class="span6 left">
+              <h2><span style="color:rgb(247, 84, 227);">mat</span>hematics and <span style="color:rgb(247, 84, 227);">sci</span>ence</h2>
+              <div class="information_box">
+                <h4>OCaml - Simplex Solver</h4>
+                <div class="employer">
+                  Harvard University - Introduction to Computer Science II
+                </div>
+                <div class="date">
+                  May 2013
+                </div>
+                <a class="link" href="uploads/FinalSpec.pdf">Final Specification</a>
+                <p class="description">
+                  Simplex algorithm in ML with arbitrary precision floats, custom matrix library, and unsolvable/unbounded solution identification. We have decided to reduce the amount of functions available to the outside world. The matrix
+                  module will still contain the same functionality as before, but only the functions necessary for the
+                  implementation of the Simplex algorithm will b e exposed (row-reduction, for example). The main
+                  focus of the project has now shifted to having a working simplex algorithm. Other functions, such
+                  as finding the eigenvalues of a matrix, while interesting, have been placed in our “Cool Features”
+                  category. Furthermore, following the idea that Simplex is our main focus, additional functionality
+                  such as parsing input, providing arbitrary float precision and/or providing a matrix implementation
+                  with bignums has been degraded in importance. All of our attention will b e focused on creating a
+                  working simplex algorithm
+                </p>
+              </div>
+              <div class="information_box">
+                <h4>Mathematical Proofs</h4>
+                <div class="employer">
+                  Harvard University - Linear Algebra with Applications
+                </div>
+                <div class="date">
+                  Fall 2013
+                </div>
+                <table class="table table-hover table-bordered">
+                  <tbody>
+                    <tr>
+                      <td><a class="link" href="uploads/Perez Module 1 Proof.pdf">Module 1 Proof</a></td>
+                      <td><a class="link" href="uploads/Perez Module 2 Proof.pdf">Module 2 Proof</a></td>
+                      <td><a class="link" href="uploads/Perez Module 3 Proof.pdf">Module 3 Proof</a></td>
+                    </tr>
+                    <tr>
+                      <td><a class="link" href="uploads/Perez Module 4 Proof.pdf">Module 4 Proof</a></td>
+                      <td><a class="link" href="uploads/Perez Module 5 Proof.pdf">Module 5 Proof</a></td>
+                      <td><a class="link" href="uploads/Perez Module 6 Proof.pdf">Module 6 Proof</a></td>
+                    </tr>
+                    <tr>
+                      <td><a class="link" href="uploads/Perez Module 7 Proof.pdf">Module 7 Proof</a></td>
+                      <td><a class="link" href="uploads/Perez Module 8 Proof.pdf">Module 8 Proof</a></td>
+                      <td><a class="link" href="uploads/Perez Module 9 Proof.pdf">Module 9 Proof</a></td>
+                    </tr>
+                    <tr>
+                      <td><a class="link" href="uploads/Perez Module 10 Proof.pdf">Module 10 Proof</a></td>
+                      <td><a class="link" href="uploads/Perez Module 11 Proof.pdf">Module 11 Proof</a></td>
+                      <td><a class="link" href="uploads/Perez Module 12 Proof.pdf">Module 12 Proof</a></td>
+                    </tr>
+                    <tr>
+                      <td><a class="link" href="uploads/Perez Module 13 Proof.pdf">Module 13 Proof</a></td>
+                      <td><a class="link" href="uploads/Perez Module 14 Proof.pdf">Module 14Proof</a></td>
+                      <td><a class="link" href="uploads/Perez Module 15 Proof.pdf">Module 15 Proof</a></td>
+                    </tr>
+                  </tbody>
+                </table>
+                <p class="description">
+                  A series of module proofs in topics including real analysis, set theory, topology, and linear algebra. 
+                </p>
+              </div>
+              <div class="information_box">
+                <h4>Quantum Tunneling Paper</h4>
+                <div class="employer">
+                  Harvard University - Quantum and Statistical Foundations of Chemistry
+                </div>
+                <div class="date">
+                  Fall 2013
+                </div>
+               <a class="link" href="uploads/Quantum Tunneling.pdf">Electrons and Quantum Tunneling: Barrier properties and their effects on tunneling probability (with applications to transistor design)</a>
+                <p class="description">
+                 Quantum Tunneling is a quantum mechanical occurrence e that consists of particles passing through a barrier from Side A to Side B; in technical terms, the wave
+                function of the particle originating on Side A, despite decreasing ex potentially
+                while inside the increased potential of the barrier, is non-zero on Side B. This
+                implies a non-zero probability of finding the particle on the “wrong” side of the
+                classically impenetrable barrier .
+                This effect is observable in practical applications, such as in the construction
+                of miniature transistors. In this paper, we explore this quantum mechanical effect
+                in terms of a single particle encountering a square barrier. This type of model
+                approaches remarkably well that of a transistor in current CPU dies, and we
+                propose a correlation between different insulating materials and the results from
+                our model. In particular, we investigate the effects barrier properties, such as
+                thickness and height, potential landscape differences such as changes in potential
+                from Side A to Side B, and particle properties such as mass and kinetic energy
+                have on the tunneling probability, or as known in the literature, the transmittance
+                ratio. The ratio is found to decrease exponentially with increasing height and
+                width of the potential barrier. It is also found to occur at significant amounts only
+                when the wavelength of the approaching particle is ab out the same magnitude as
+                the barrier width.
+                </p>
+              </div>
+            </div>
+            <!-- end half of screen -->
+            <!-- Second Half Of Screen -->
+            <div class="span6 left">
+              <h2><span style="color:rgb(10, 255, 14);">sid</span>e <span style="color:rgb(10, 255, 14);">pro</span>jects</h2>
+              <div class="information_box">
+                <h4>Inter-sexual Relationships</h4>
+                <div class="employer">
+                  Harvard University - Introductory Psychology
+                </div>
+                <div class="date">
+                  Fall 2013
+                </div>
+               <a class="link" href="uploads/Intersexual Relationships.pdf">Exploring Sexual Orientation in Same-Sex Friendships</a>
+                <p class="description">
+                  This paper explores the development of same-sex cross-orientation friendships and their effects
+                  on society. By same-sex cross-orientation, the paper refers to friendships in which both friends
+                  are the same gender (same-sex), but in which their sexual orientation or identifying gender-role
+                  differ. Specifically, the paper focuses on friendships between straight men and gay men and
+                  straight women and lesbian women. It does not delve deeply into other friendships (such as those
+                  between bisexual women and men, but despite these limitations, much of the research found
+                  therein should be applicable to most same-sex cross-orientation friendships. In order to
+                  accomplish the research, this paper first examines the current literature on the subject of diverse
+                  friendships and utilizes that as a launching pad for the exploration of same-sex cross-orientation
+                  friendships and their effect on society (and vice versa). The paper then proceeds to draw parallels
+                  between inter-racial and same-sex cross-orientation friendships where necessary in order to
+                  highlight how unique same-sex cross-orientation friendships, and to reach the conclusions that
+                  more active societal intervention is necessary to foster an accepting environment for the LGBTQ
+                  community. The onus should not be on them
+                </p>
+              </div>
+              <div class="information_box">
+                <h4>Reshaping Social Networks</h4>
+                <div class="employer">
+                  Harvard University - Expository Writing
+                </div>
+                <div class="date">
+                  Spring 2013
+                </div>
+               <a class="link" href="uploads/Reshaping Online Social Networks.pdf">Effectively Reshaping Online Social Networking Sites: The Effects of Online Communication on Group Dynamics and Individual Behavior</a>
+                <p class="description">
+                  Social networking sites offer members efficient ways to communicate with an ever-increasing
+                  network of individuals. As the size of networks increases, human psychology, which evolved to
+                  socialize under drastically different conditions, can sufferer detrimental consequences.
+                  Sociological research has revealed differences in the group dynamics of online communities.
+                  Furthermore, cognitive psychology has hinted at possible detrimental effects that can arise for
+                  individual members due to the nature of SNS and the value placed on self-presentation. In this
+                  paper, we propose possible modification to current SNS as well as novel methods to mitigate the
+                  negative effects of online communities and nurture the positive aspects. These proposals are
+                  geared towards technology entrepreneurs looking to service online communities. In particular,
+                  the paper recommends minimized anonymity, implementing tools for group differentiation, and
+                  developing an anonymous and visible reporting systems.
+                </p>
+              </div>
+              <div class="information_box">
+                <h4>EntrEtudes</h4>
+                <div class="employer">
+                  Harvard University - Business French
+                </div>
+                <div class="date">
+                  Spring 2014
+                </div>
+                <a class="link" href="uploads/Projet Ecrit.pdf">Rapport Annuel - EntrEtudes</a>
+                <p class="description">
+                  Ici, nous proposons une nouvelle idée révolutionnaire et un plan
+                  d’expansion pour l’entreprise EntrÉtudes. Nous résumons l’état de la
+                  société et présentons notre service unique offert à Paris maintenant, mais
+                  avec espoir de l’offrir à d’autres villes.
+                </p>
+              </div>
+              <div class="information_box">
+                <h4>Market Limits</h4>
+                <div class="employer">
+                  Harvard University - Expository Writing
+                </div>
+                <div class="date">
+                  Fall 2012
+                </div>
+                <a class="link" href="uploads/Sandel's Response.pdf">Market Limits Revisited</a>
+                <p class="description">
+                 Classical argument exploring the idea of free-markets.
+                </p>
+              </div>
+            </div>
+            <!-- end second half of screen -->
+          </div>
+          <!-- end row-fluid -->
+        </div>
+        <!-- end container-fluid-->
+      </div>
+    </div>
+		<!-- end #projects_page -->
 	</div>
 	<!-- end main -->
 	<!-- Begin Footer -->
