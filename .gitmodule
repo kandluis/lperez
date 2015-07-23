@@ -1,0 +1,3 @@
+[submodule "library/stroll"]
+  path = library/stroll
+  url = https://github.com/hakimel/stroll.js.git
