@@ -1,4 +1,0 @@
-AuthName "Scholarship Administration"
-AuthType Basic
-AuthUserFile /nfs/home/groups/actonadream-web/web
-Require valid-user
