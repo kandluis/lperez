@@ -1,1 +1,690 @@
-Hello World!
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+	<!-- All the Meta Date -->
+	<meta http-equic="Content-Type" content="text/html; charset=UTF=8">
+	<title>Luis Perez</title>
+	<meta name="viewport" content"widht=device=width, initial-scale=1, maximum-scale=1.0">
+	<meta name="author" content="Luis Antonio Perez">
+
+	<!-- OpenGraph: Facebook rules -->
+	<meta property="og:url" content="http://lperez.site44.com/">
+	<meta propert="og:image" content="http://lperez.site44.com/img/main_image.jpg">
+	<meta propert="og:description" content="My name is Luis. I study Computer Science and Mathematics at Harvard University. I am an aspiring programmer, system analyst, teacher, poet, and system analyst">
+
+	<!-- Le styles -->
+	<link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,600|Lato:700|Lily+Script+One|Dosis:200' rel='stylesheet' type='text/css'>
+	<link type="text/css" rel="stylesheet" href="css/bootstrap.min.css">
+	<link type="text/css" rel="stylesheet" href="css/bootstrap-responsive.min.css">
+	<link type="text/css" rel="stylesheet" href="css/styles.css">
+
+	<!-- The Favicon Linking -->
+	<link rel="shortcut icon" href="img/favicon-16.ico" type="image/x-icon">
+
+	<!-- Taking care of NoScript -->
+	<noscript>
+    <div id="noscript">
+    	Looks like you don't have Javascript enabled&mdash;what's up with that?
+    </div>
+    <style type="text/css">
+        * { visibility: hidden; }
+        #noscript { 
+            visibility: visible !important; 
+            margin: 10px;
+        }
+    </style>
+  </noscript>
+</head>
+<!-- CONTENT 
+	===========================================================================
+-->
+<body>
+	<!-- Begin Header -->
+	<div id="header">
+		<!-- NAVBAR
+			====================================================================
+		-->
+		<div class="navbar-wrapper">
+			<!-- Wrap .navbar in .container to center it within parent -->
+			<div class="container">
+				<div class="navbar navbar-inverse navbar-fixed">
+					<div class="navbar-inner">
+						<!-- Collapse Navbar if screen is too small -->
+						<button type="button" class="btb btn-navbar collapsed" data-toggle="collapse" data-target=".nav-collapse">
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+						</button>
+						<a class="brand" href="mailto:luisperez@college.harvard.edu">Luis Perez</a>
+						<!-- Contents to be collapsed -->
+						<div id="nav_collapse" class="nav-collapse collapse" style="height: 0px">
+							<ul class="nav pull-right">
+								<li id="about_nav">
+									<a href="#about">about</a>
+								</li>
+								<li id="resume_nav">
+									<a href="#resume">r&eacutesum&eacute</a>
+								</li>
+								<li id="contact_nav">
+									<a href="#contact">contact</a>
+								</li>
+                <li id="projects_nav">
+									<a href="#projects">projects</a>
+								</li>
+							</ul>
+						</div>
+						<!-- /.nav-collapse -->
+					</div>
+					<!-- /.navbar-inner -->
+				</div>
+				<!-- /.navbar -->
+			</div>
+			<!-- /.container -->
+		</div>
+		<!-- /.navbar-wrapper -->
+	</div>
+	<!-- End Header -->
+	<!-- Carousel 
+	====================================================================
+	-->
+	<div id="myCarousel" class="carousel slide">
+		<div class="carousel-inner">
+			<div class="item active">
+				<img src="img/carousel/slide-01.jpg" alt="Long Live New York!">
+				<div class="container">
+					<div class="carousel-caption">
+						<h1>Keep your childhood, keep your dreams, stay alive.</h1>
+						<p class="lead">Hai there! My name is Luis. I study Computer Science and Mathematics at Harvard University. I am a (web) programmer, CA, tutor, poet, writer - the list goes on. As long as there's time, there's a way to be.</p>
+						<a class="btn btn-primary btn-large" href="mailto:luisperez@college.harvard.edu"><i class="icon-envelope icon-white"></i> Digitize!</a>
+					</div>
+				</div>
+			</div>
+			<div class="item">
+				<img src="img/carousel/slide-02.jpg" alt="Looking over ocean.">
+				<div class="container">
+					<div id="random_caption_link" class="carousel-caption">
+						<h1>Online at Last</h1>
+						<p class="lead">So many stories to tell and such little time. Yet, here on the web, the time is infinite. Even though the pictures might slowly drift by, you can be certain they'll always come back. Therefore, I've decided to put up my little slice, claim a small area. The site is made beautiful by <a href="http://twitter.github.io/bootstrap/">Twitter Bootstrap</a> and some small snippets of custom <a href="http://en.wikipedia.org/wiki/JavaScript">js</a>. Other than that, it is all hand coded! So thank you for stopping by an taking a look.</p>
+						<a class="btn btn-larg btn-primary" href="">Random!</a>
+					</div>
+				</div>
+			</div>
+			<div class="item">
+				<img src="img/carousel/slide-03.jpg" alt="Computer CPU.">
+				<div class="container">
+					<div class="carousel-caption">
+						<h1>Life in a Letter</h1>
+						<p class="lead">Dear World,<br/>
+              We say hello, you say goodbye. We speak of good, you speak of ill. We see light where you see darkness. We are <a href="http://www.actonadream.org"><b>Dreamers</b></a>.<br/><br/>
+              Sincerely,<br/>
+              Luis</p>
+						<a class="btn btn-large btn-primary" href="#projects">More Projects</a>
+					</div>
+				</div>
+			</div>
+		</div>
+		<a class="left carousel-control" href="#myCarousel" data-slide="prev">‹</a>
+		<a class="right carousel-control" href="#myCarousel" data-slide="next">›</a>
+	</div>
+	<!-- /.carousel -->
+	<!-- Begin Main -->
+	<div id="main">
+		<!-- Home
+			====================================================================
+		-->
+		<div id="home_page" class="page">
+		</div>
+		<!-- end #home_page -->
+		<!-- About 
+			====================================================================
+		-->
+		<div id="about_page" class="page">
+			<div id="about_me" class="container">
+				<div class="fade">
+					<img id="about_photo" class="img-polaroid" src="img/about_photo_greyscale.jpg" alt="Greyscale Photo">
+				</div>
+				<!-- /.fade -->
+				<div class="content">
+					<h3> Who am I? The longer version.</h3>
+					<p>
+						I was born in Mexico City, Mexico, but I spent a good chunk of my childhood in a small village in the state of Guanajuato. My free time during those days was devoted to hanging out with friends, playing with pet bugs, and filling out grammar books for fun. I also loved to rock climb (the five-foot rock fences). Eventually, I moved to Texas with my family. I grew to love learning, thinking, and doing Soduku and Logic puzzles (which involves both!). At some point, I fell in love with computers, math, and foreign languages. After getting into college, I wrote my first "Hello World!" program in C and life was complete. Well, almost. I've also dabbled in Topology (ie mathy stuff), Philosophy, and Psychology. I'm still undecided Concentration-wise, but I've discovered that life is like a simple C program: everything should work, but there are always syntax errors, null pointers, and memory leaks.
+					</p>
+					<p>
+						As to my other interests, I spend most of my time on <a href="http://www.wikipedia.org" target="_blank">Wikipedia</a>. I love learning. I don't know if that's become evident yet, but I take the idea that knowledge is power to its extremes. I also occasionally wander to <a href="http://www.askamathematician.com" target="_blank">Ask A Mathematician</a> or <a href="what-if.xkcd.com" target="_blank">what-if</a> for a random dose of the aforementioned knowledge. Since I'm on a rampage about sites anyhow, I might as well give thanks to <a href="http://thebrowser.com" target="_blank">The Browser</a>
+					</p>
+					<p>
+						What about out in the real world? Well, I'm currently an undergraduate at Harvard College. My plan is to concentrate in Computer Science (Kudos to <a href="http://cs50.net">cs50</a> and Karma points to <a href="http://cs51.seas.harvard.edu">cs51</a> and to minor (<a href="http://talk.collegeconfidential.com/harvard-university/683521-does-harvard-offer-minors-double-majors.html">?</a>) in <strke>Applied</strke> Mathematics (all of which has now been officially completed!). 2014 was my sophomore year, and now that it is completed, all I can feel is relief! Finally, halfway through my undergraduated education, and still looking forward to continuing further. The material only becomes more exciting the more challenge there is to learning it. 
+					<p>
+						For this summer, I will spend my days working full time for Harvard Forest (did you know that Harvard had a <a href="http://harvardforest.fas.harvard.edu/">forest!</a>). I will be developing (or, more accurately, continuing the development) of a software package dedicated to 
+					</p>
+				</div>
+				<!-- end .content -->
+			</div>
+			<!-- end #about_me -->
+		</div>
+		<!-- end #about_page -->
+		<!-- Resume
+			====================================================================
+		-->
+		<div id="resume_page" class="page">
+			<div class="container-fluid">
+			  <div class="row-fluid">
+			  	<!--Professional Experience Half -->
+			    <div class="span7 left">
+            <!-- Download Transcript Button-->
+            <div id="download">
+              <a href="uploads/Luis_Perez-Resume.pdf">
+              <i class=" icon-circle-arrow-down icon-white"></i> Download Resume
+              </a>
+            </div>
+			      <h2><span style="color:rgb(247, 84, 227);">exp</span>erience</h2>
+		   	    <div class="information_box">
+            	<h4>Course Assistant</h4>
+            	<div class="employer">
+            		Harvard University Mathematics Department
+            	</div>
+            	<div class="date">
+            		August 2013 - Present
+            	</div>
+            	<p class="description">
+            		Co-teaching introductory course to calculus with <a href="mailto:penner@fas.harvard.edu">Kate Penner</a>. Scheduling of workload and structuring of problem sessions with <a href="mailto:jameel@math.harvard.edu"> Jameel Al-Aidroos</a>. Weekly problem sessions. Assignment checking and grading. Teaching experience.
+            	</p>
+            </div>
+            <div class="information_box">
+            	<h4>Course Assistant</h4>
+            	<div class="employer">
+            		Harvard University Computer Science Department
+            	</div>
+            	<div class="date">
+            		August 2013 - Present
+            	</div>
+            	<p class="description">
+            		Volunteer position as assistant for <a href="http://www.cs50.net">Computer Science 50 </a>, an introductory undergraduate course to computer science. Run weekly office hours geared at providing support to as large a group of students as possible.} 
+            	</p>
+            </div>
+            <div class="information_box">
+              <h4>Student Research Assistant</h4>
+              <div class="employer">
+                Wyss Institute of Biologically Inspired Engineering
+              </div>
+              <div class="date">
+                May 2013 - August 2013
+              </div>
+              <p class="description">
+                Lead assistant to <a href="http://cee.mit.edu/kassabian">Dr. Paul Kassabian</a> and <a href="http://people.seas.harvard.edu/~jkwerfel/">Justin Werfel</a>. Exploring decentralized systems in the contruction of complex structures through localized information gathering. Focus on decision making with local information as opposed to more common centralized approach.
+              </p>
+            </div>
+            <div class="information_box">
+              <h4>Bureau of Study Council Tutor</h4>
+              <div class="employer">
+                Bureau of Study Council at Harvard University
+              </div>
+              <div class="date">
+                January 2013 - Present
+              </div>
+              <p class="description">
+                Tutored students in a varied array of mathematical subjects covering classes from Single Variable Pre-Calculus to Multivariable Calculus (Math 21a). Topics touched on include but are not limited to dot product, cross product, polar and spherical coordinates, partial derivatives, Stoke's Theorem, Green's Theorem, and Divergence Theorem. Attended tutoring seminars.
+              </p>
+            </div>
+            <div class="information_box">
+              <h4>Technology Associate</h4>
+              <div class="employer">
+                The Harvard Crimson
+              </div>
+              <div class="date">
+                January 2013 - Present
+              </div>
+              <p class="description">
+                Upkeep of <a href="http://thecrimson.com">The Harvard Crimson</a> website, along with HighRise advertisement database. Launch of <a href="store.thecrimson.com">The Crimson Store</a>. Django based with administrative interface hosted on Amazon SW3. Heroku development server and git version control.
+              </p>
+            </div>
+            <!-- Begin older, hidable content -->
+          	<div class="toggle-visible">
+	            <div class="information_box">
+	            	<h4>Software Developer</h4>
+	            	<div class="employer">
+	            		Freelance
+	            	</div>
+	            	<div class="date">
+	            		August 2011 - Present
+	            	</div>
+	            	<p class="description">
+	            		Design and develop websites for personal enrichment purposes. Examples include <a href="http:\\lperez.site44.com">personal website</a> and <a href="http://www.harvarddiscuss.com">Harvard Discuss</a>. Explore different algorithms such as Simplex and write efficient programs to utilize them.
+	            	</p>
+	            </div>
+	            <div class="information_box">
+	              <h4>Technology Manager</h4>
+	              <div class="employer">
+	                Act on a Dream at Harvard College
+	              </div>
+	              <div class="date">
+	                August 2012 - May 2013
+	              </div>
+	              <p class="description">
+	                Maintain <a href="http://www.actonadream.org">Act on A Dream</a> website. Restructure <a href="http://scholarships.actonadream.org">scholarships</a> database for undocumented students. Wordpress backend and integration for simpler content management. GoogleApps group site and email. 
+	              </p>
+	            </div>
+	            <div class="information_box">
+	            	<h4>Ranch Hand</h4>
+	            	<div class="employer">
+	            		Alleluia Hills Ranch
+	            	</div>
+	            	<div class="date">
+	            		August 2010 - August 2012
+	            	</div>
+	            	<p class="description">
+	            		Maintained upkeep of ranch. Duties included feeding horses, mowing, watering, cleaning debree, and odd jobs necessary for the well-being of animals. Constructed new paddocks and improved irrigation system.
+	            	</p>
+	            </div>
+	          </div>
+	          <button type="button" class="toggler btn btn-link">
+	          	<span>less... </span>
+	          	<i class="icon-chevron-up"></i>
+	          </button>
+	          <!-- End Hideable Content-->
+          </div>
+          <!-- End Professional Experience-->
+          <!-- Begin Education, Organization, and Skills (Toolbox) -->
+			    <div class="span5 right">
+            <!-- Download Transcript Button-->
+            <div id="download">
+              <a href="uploads/Luis_Perez-Transcript.pdf">
+              <i class=" icon-circle-arrow-down icon-white"></i> Download Transcript
+              </a>
+            </div>
+			      <h2><span style="color:rgb(114, 233, 243);">edu</span>cation</h2>
+			      <div class="information_box">
+			      	<h4>Harvard College</h4>
+			      	<div class="employer">B.S Candidate in Computer Science</div>
+			      	<div class="date">
+			      		August 2012 - Present
+			      		<br/>
+			      		Expected Graduation: 2016
+			      	</div>
+			      	<div class="detail">
+			      		Overall GPA: 4.0
+			      		<br/>
+			      		<b>Awards:</b>
+			      		John Harvard Scholar, Detur Book Prize
+			      		<br/>
+			      		<b>Courses:</b>
+			      		<button type="button" class="btn btn-link toggler2">
+			      			<span>Show</span>
+			      			<i class="icon-chevron-down"></i>
+			      		</button>
+			      		<div class="toggle-hidden">
+				      		<!-- Begin hideable courses-->
+				      		<ul id="courses">
+				      			<li>Introduction to Computer Science I (COMPSCI 50)</li>
+				      			<li>Introduction to Computer Science II (COMPSCI 51)</li>
+				      			<li>Multivariable Calculus (MATH 21a)</li>
+				      			<li>Linear Algebra and Differential Equations (MATH 21b)</li>
+				      			<li>Expository Writing 10 (EXPOS 10)</li>
+				      			<li>Expository Writing 20 (EXPOS 20)</li>
+				      			<li>Gravity in Extremes:Black Holes of the Universe (FRSEMR 23)</li>
+				      			<li>Computer Science 121: Introduction to the Theory of Computation (COMPSCI 121)</li>
+				      			<li>Physical Sciences 10: Quantum and Statistical Foundations of Chemistry (PHYSCI 10)</li>
+				      			<li>English 182: Science Fiction (ENG 182)</li>
+				      			<li>Math 121: Linear Algebra with Applications (MATH 121)</li>
+				      		</ul>
+				      	</div>
+			      		<!-- End Hideable Content-->
+			      	</div>
+			      </div>
+			      <div class="information_box">
+			      	<h4>Nacogdoches High School</h4>
+			      	<div class="employer">Diploma (Distinguished Program)</div>
+			      	<div class="date">August 2007 - June 2012</div>
+			      	<div class="detail">
+			      		GPA 106.51 | Valedictorian
+			      		<br/>
+			      		<div class="toggle-visible">
+			      			<div class="detailed-description">
+			      				→ Graduated June 2012. President of French Club. Model United Nations Security Council head. National Honors Society, Ecology Club. Chess Club co-founder. Member of Science and Physics UIL teams.
+			      			</div>
+			      			<b>Awards: </b>
+			      			<button type="button" class="btn btn-link toggler2">
+			      				<span>Show</span>
+			      				<i class="icon-chevron-down"></i>
+			      			</button>
+			      			<!-- Begin hideable awards-->
+				      		<div class="toggle-hidden">
+				      			<ul>
+					      			<li>AP Scholar with Distinction</li>
+					      			<li>3rd Place in Physics UIL Competition</li>
+					      			<li>Outstanding Senior Award</li>
+					      			<li>National Laur&eacuteat Certificate</li>
+					      			<li>Academic Excellence (mult)</li>
+					      			<li>Top Model Security Council Delegate</li>
+					      			<li>Placed in IB Biology Examination</li>
+					      		</ul>
+					      	</div>
+				      		<!-- End Hideable Content-->
+				      	</div>
+				      	<!-- End Hideable Content -->
+				      	<button type="button" class="btn btn-link toggler">
+			      			<span>...less </span>
+			      			<i class="icon-chevron-up"></i>
+			      		</button>
+			      	</div>
+			      </div>
+			      <h2>
+			      	<span style="color: rgb(255, 97, 23);">org</span>anizations
+			      </h2>
+			      <div class="information_box">
+			      	<h4>Institute of Politics (2013-)</h4>
+			      	<div class="employer">Immigration Policy Group</div>
+			      </div>
+			   		<div class="information_box">
+			   			<h4>Director of Public Outreach (2013-)</h4>
+			   				<div class="employer">Act on A Dream @ Harvard College</div>
+			   		</div>
+			   		<div class="information_box">
+			   			<h4>Nacogdoches French Club (2008-2012)</h4>
+			   			<div class="employer">Vice-President/ President / Member</div>
+			   		</div>
+			   		<h2>
+			   			<span style="color:rgb(214, 11, 223);">too</span>lbox
+			   		</h2>
+			   		<div class="toolbox">
+			   			<ul>
+			   				<li>PHP</li>
+			   				<li>JavaScript/jQuery</li>
+			   				<li>C</li>
+			   				<li>HTML/CSS</li>
+			   				<li>SQL</li>
+			   				<li>Django</li>
+			   				<li>Python</li>
+			   				<li>OCaml</li>
+			   				<li>Windows</li>
+			   				<li>UNIX</li>
+			   				<li>Ubuntu/Linux</li>
+			   				<li>Photoshop</li>
+			   				<li>Spanish</li>
+			   				<li>French</li>
+			   				<li>Joomla</li>
+			   				<li>Drupal</li>
+			   				<li>
+			   					<span style="font-family:cmr10, LMRoman10-Regular, Times, serif;">
+			   						L
+			   						<span style="text-transform: uppercase; font-size: 70%; margin-left: -0.36em; vertical-align: 0.3em; line-height: 0; margin-right: -0.15em;">
+			   							a
+			   						</span>
+			   						T
+			   						<span style="text-transform: uppercase; margin-left: -0.1667em; vertical-align: -0.5ex; line-height: 0; margin-right: -0.125em;">
+			   							e
+			   						</span>
+			   						X
+			   					</span>
+			   				</li>
+			   			</ul>
+			   		</div>
+			    </div>
+				</div>
+			</div>
+		</div>
+		<!-- end #resume_page -->
+		<!-- Contact
+			====================================================================
+		-->
+		<div id="contact_page" class="page">
+			<div class="container-fluid">
+				<div class="row-fluid">
+						<div class="span8 left">
+							<div id="response"></div>
+							<h2>Avez-vous la correspondance!?</h2>
+							<p>Use this nice form to send me a message directly. I'll respond within a day (with the answer to life, the universe, and everything!). Merci beaucoup!</p>
+							<p>
+								Or, email me directly at <a id="email" href="mailto:luisperez@college.harvard.edu">luisperez@college.harvard.edu</a>.
+							</p>
+							<form method="post" id="contact" name="contact" action="#">
+								<label for="name">Name</label> <input type="text" id="name" name="name" class="required input_field" />
+								<div class="cleaner"></div>
+								<label for="email">Email</label> <input type="text" id="email" name="email" class="validate-email required input_field" />
+								<div class="cleaner"></div>
+								<label for="message">Message</label> <textarea id="message" name="message" class="required"></textarea>
+								<div class="cleaner"></div>
+								<div style="text-align:center">
+									<button type="button" class="btn" name="submit" id="submit">Send Mail</button>
+								</div>
+							</form>
+						</div>
+						<div class="span4 right">
+							<h2>Find me Online.</h2>
+							<a href="http://www.linkedin.com/pub/luis-perez/73/793/770" target="_blank">i</a>
+							<a href="https://www.facebook.com/kandluis" target="_blank">f</a>
+							<a href="https://plus.google.com/u/0/104150047072639759655" target="_blank">g</a>
+							<a href="https://twitter.com/lui_instinct" target="_blank">t</a>
+							<a href="https://myspace.com/kandluis" target="_blank">m</a>
+							<a href="https://www.youtube.com/user/kandluis" target="_blank">x</a>
+							<a href="http://profile.yahoo.com/M6WUDGADQ7CXYBEWMBOWHQGOPU/" target="_blank">y</a>
+							<a href="http://www.actonadream.org" target="_blank">w</a>
+							<a href="http://www.github.com/kandluis" target="_blank">2</a>
+						</div>
+					</div>
+				</div>
+			</div>
+  		<!-- end #contact_page -->
+  		<!-- project
+  			====================================================================
+  		-->
+  		<div id="projects_page" class="page">
+        <div class="container-fluid">
+          <div class="intro">
+            <h3>Apologies for the lack of design. Time is not readily available. Instead, here, you will find links to some of the work I've done.</h3>
+          </div>
+          <div class="row-fluid">
+            <!-- Half Of Screen -->
+            <div class="span6 left">
+              <h2><span style="color:rgb(247, 84, 227);">mat</span>hematics and <span style="color:rgb(247, 84, 227);">sci</span>ence</h2>
+              <div class="information_box">
+                <h4>OCaml - Simplex Solver</h4>
+                <div class="employer">
+                  Harvard University - Introduction to Computer Science II
+                </div>
+                <div class="date">
+                  May 2013
+                </div>
+                <a class="link" href="uploads/FinalSpec.pdf">Final Specification</a>
+                <p class="description">
+                  Simplex algorithm in ML with arbitrary precision floats, custom matrix library, and unsolvable/unbounded solution identification. We have decided to reduce the amount of functions available to the outside world. The matrix
+                  module will still contain the same functionality as before, but only the functions necessary for the
+                  implementation of the Simplex algorithm will b e exposed (row-reduction, for example). The main
+                  focus of the project has now shifted to having a working simplex algorithm. Other functions, such
+                  as finding the eigenvalues of a matrix, while interesting, have been placed in our “Cool Features”
+                  category. Furthermore, following the idea that Simplex is our main focus, additional functionality
+                  such as parsing input, providing arbitrary float precision and/or providing a matrix implementation
+                  with bignums has been degraded in importance. All of our attention will b e focused on creating a
+                  working simplex algorithm
+                </p>
+              </div>
+              <div class="information_box">
+                <h4>Mathematical Proofs</h4>
+                <div class="employer">
+                  Harvard University - Linear Algebra with Applications
+                </div>
+                <div class="date">
+                  Fall 2013
+                </div>
+                <table class="table table-hover table-bordered">
+                  <tbody>
+                    <tr>
+                      <td><a class="link" href="uploads/Perez Module 1 Proof.pdf">Module 1 Proof</a></td>
+                      <td><a class="link" href="uploads/Perez Module 2 Proof.pdf">Module 2 Proof</a></td>
+                      <td><a class="link" href="uploads/Perez Module 3 Proof.pdf">Module 3 Proof</a></td>
+                    </tr>
+                    <tr>
+                      <td><a class="link" href="uploads/Perez Module 4 Proof.pdf">Module 4 Proof</a></td>
+                      <td><a class="link" href="uploads/Perez Module 5 Proof.pdf">Module 5 Proof</a></td>
+                      <td><a class="link" href="uploads/Perez Module 6 Proof.pdf">Module 6 Proof</a></td>
+                    </tr>
+                    <tr>
+                      <td><a class="link" href="uploads/Perez Module 7 Proof.pdf">Module 7 Proof</a></td>
+                      <td><a class="link" href="uploads/Perez Module 8 Proof.pdf">Module 8 Proof</a></td>
+                      <td><a class="link" href="uploads/Perez Module 9 Proof.pdf">Module 9 Proof</a></td>
+                    </tr>
+                    <tr>
+                      <td><a class="link" href="uploads/Perez Module 10 Proof.pdf">Module 10 Proof</a></td>
+                      <td><a class="link" href="uploads/Perez Module 11 Proof.pdf">Module 11 Proof</a></td>
+                      <td><a class="link" href="uploads/Perez Module 12 Proof.pdf">Module 12 Proof</a></td>
+                    </tr>
+                    <tr>
+                      <td><a class="link" href="uploads/Perez Module 13 Proof.pdf">Module 13 Proof</a></td>
+                      <td><a class="link" href="uploads/Perez Module 14 Proof.pdf">Module 14Proof</a></td>
+                      <td><a class="link" href="uploads/Perez Module 15 Proof.pdf">Module 15 Proof</a></td>
+                    </tr>
+                  </tbody>
+                </table>
+                <p class="description">
+                  A series of module proofs in topics including real analysis, set theory, topology, and linear algebra. 
+                </p>
+              </div>
+              <div class="information_box">
+                <h4>Quantum Tunneling Paper</h4>
+                <div class="employer">
+                  Harvard University - Quantum and Statistical Foundations of Chemistry
+                </div>
+                <div class="date">
+                  Fall 2013
+                </div>
+               <a class="link" href="uploads/Quantum Tunneling.pdf">Electrons and Quantum Tunneling: Barrier properties and their effects on tunneling probability (with applications to transistor design)</a>
+                <p class="description">
+                 Quantum Tunneling is a quantum mechanical occurrence e that consists of particles passing through a barrier from Side A to Side B; in technical terms, the wave
+                function of the particle originating on Side A, despite decreasing ex potentially
+                while inside the increased potential of the barrier, is non-zero on Side B. This
+                implies a non-zero probability of finding the particle on the “wrong” side of the
+                classically impenetrable barrier .
+                This effect is observable in practical applications, such as in the construction
+                of miniature transistors. In this paper, we explore this quantum mechanical effect
+                in terms of a single particle encountering a square barrier. This type of model
+                approaches remarkably well that of a transistor in current CPU dies, and we
+                propose a correlation between different insulating materials and the results from
+                our model. In particular, we investigate the effects barrier properties, such as
+                thickness and height, potential landscape differences such as changes in potential
+                from Side A to Side B, and particle properties such as mass and kinetic energy
+                have on the tunneling probability, or as known in the literature, the transmittance
+                ratio. The ratio is found to decrease exponentially with increasing height and
+                width of the potential barrier. It is also found to occur at significant amounts only
+                when the wavelength of the approaching particle is ab out the same magnitude as
+                the barrier width.
+                </p>
+              </div>
+            </div>
+            <!-- end half of screen -->
+            <!-- Second Half Of Screen -->
+            <div class="span6 left">
+              <h2><span style="color:rgb(10, 255, 14);">sid</span>e <span style="color:rgb(10, 255, 14);">pro</span>jects</h2>
+              <div class="information_box">
+                <h4>Inter-sexual Relationships</h4>
+                <div class="employer">
+                  Harvard University - Introductory Psychology
+                </div>
+                <div class="date">
+                  Fall 2013
+                </div>
+               <a class="link" href="uploads/Intersexual Relationships.pdf">Exploring Sexual Orientation in Same-Sex Friendships</a>
+                <p class="description">
+                  This paper explores the development of same-sex cross-orientation friendships and their effects
+                  on society. By same-sex cross-orientation, the paper refers to friendships in which both friends
+                  are the same gender (same-sex), but in which their sexual orientation or identifying gender-role
+                  differ. Specifically, the paper focuses on friendships between straight men and gay men and
+                  straight women and lesbian women. It does not delve deeply into other friendships (such as those
+                  between bisexual women and men, but despite these limitations, much of the research found
+                  therein should be applicable to most same-sex cross-orientation friendships. In order to
+                  accomplish the research, this paper first examines the current literature on the subject of diverse
+                  friendships and utilizes that as a launching pad for the exploration of same-sex cross-orientation
+                  friendships and their effect on society (and vice versa). The paper then proceeds to draw parallels
+                  between inter-racial and same-sex cross-orientation friendships where necessary in order to
+                  highlight how unique same-sex cross-orientation friendships, and to reach the conclusions that
+                  more active societal intervention is necessary to foster an accepting environment for the LGBTQ
+                  community. The onus should not be on them
+                </p>
+              </div>
+              <div class="information_box">
+                <h4>Reshaping Social Networks</h4>
+                <div class="employer">
+                  Harvard University - Expository Writing
+                </div>
+                <div class="date">
+                  Spring 2013
+                </div>
+               <a class="link" href="uploads/Reshaping Online Social Networks.pdf">Effectively Reshaping Online Social Networking Sites: The Effects of Online Communication on Group Dynamics and Individual Behavior</a>
+                <p class="description">
+                  Social networking sites offer members efficient ways to communicate with an ever-increasing
+                  network of individuals. As the size of networks increases, human psychology, which evolved to
+                  socialize under drastically different conditions, can sufferer detrimental consequences.
+                  Sociological research has revealed differences in the group dynamics of online communities.
+                  Furthermore, cognitive psychology has hinted at possible detrimental effects that can arise for
+                  individual members due to the nature of SNS and the value placed on self-presentation. In this
+                  paper, we propose possible modification to current SNS as well as novel methods to mitigate the
+                  negative effects of online communities and nurture the positive aspects. These proposals are
+                  geared towards technology entrepreneurs looking to service online communities. In particular,
+                  the paper recommends minimized anonymity, implementing tools for group differentiation, and
+                  developing an anonymous and visible reporting systems.
+                </p>
+              </div>
+              <div class="information_box">
+                <h4>EntrEtudes</h4>
+                <div class="employer">
+                  Harvard University - Business French
+                </div>
+                <div class="date">
+                  Spring 2014
+                </div>
+                <a class="link" href="uploads/Projet Ecrit.pdf">Rapport Annuel - EntrEtudes</a>
+                <p class="description">
+                  Ici, nous proposons une nouvelle idée révolutionnaire et un plan
+                  d’expansion pour l’entreprise EntrÉtudes. Nous résumons l’état de la
+                  société et présentons notre service unique offert à Paris maintenant, mais
+                  avec espoir de l’offrir à d’autres villes.
+                </p>
+              </div>
+              <div class="information_box">
+                <h4>Market Limits</h4>
+                <div class="employer">
+                  Harvard University - Expository Writing
+                </div>
+                <div class="date">
+                  Fall 2012
+                </div>
+                <a class="link" href="uploads/Sandel's Response.pdf">Market Limits Revisited</a>
+                <p class="description">
+                 Classical argument exploring the idea of free-markets.
+                </p>
+              </div>
+            </div>
+            <!-- end second half of screen -->
+          </div>
+          <!-- end row-fluid -->
+        </div>
+        <!-- end container-fluid-->
+      </div>
+    </div>
+		<!-- end #projects_page -->
+	</div>
+	<!-- end main -->
+	<!-- Begin Footer -->
+	<div id="footer">
+		© 2013. Handcoded by <a href="mailto:luisperez@college.harvard.edu">Luis Perez</a> thanks to <a href="http://www.jquery.com/" target="_blank">jQuery</a> and <a href="http://twitter.github.com/bootstrap/" target="_blank">Bootstrap</a>. Inspired by <a href="http://www.yuechenzhao.com/" target="_blank">Yuechen Zhao</a>.
+	</div>
+
+	<!-- Le Javascript -->
+	<!-- Placed at the end of the document so the pages load faster -->
+	<script type="text/javascript" async src="http://www.google-analytics.com/ga.js"></script>
+	<script type="text/javascript" src="js/jquery.min.js"></script>
+	<script type="text/javascript" src="js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="js/jquery.validate.min.js"></script>
+	<script type="text/javascript" src="js/scripts.js"></script>
+	<script type="text/javascript" src="js/ga.js"></script>
+	<script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+    ga('create', 'UA-41782447-3', 'site44.com');
+    ga('send', 'pageview');
+
+  </script>
+</body>
+</html>
