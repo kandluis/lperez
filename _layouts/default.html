@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<!-- All the Meta Date -->
+	<meta http-equic="Content-Type" content="text/html; charset=UTF=8">
+	<title>{{ page.title }}</title>
+	<meta name="viewport" content"widht=device=width, initial-scale=1, maximum-scale=1.0">
+	<meta name="author" content="Luis Antonio Perez">
+
+	<!-- OpenGraph: Facebook rules -->
+	<meta property="og:url" content="http://lperez.site44.com/">
+	<meta propert="og:image" content="http://lperez.site44.com/img/main_image.jpg">
+	<meta propert="og:description" content="My name is Luis. I study Computer Science and Mathematics at Harvard University. I am an aspiring programmer, system analyst, teacher, poet, and system analyst">
+
+	<!-- Le styles -->
+	<link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,600|Lato:700|Lily+Script+One|Dosis:200' rel='stylesheet' type='text/css'>
+	<link type="text/css" rel="stylesheet" href="css/bootstrap.min.css">
+	<link type="text/css" rel="stylesheet" href="css/bootstrap-responsive.min.css">
+	<link type="text/css" rel="stylesheet" href="css/styles.css">
+
+	<!-- The Favicon Linking -->
+	<link rel="shortcut icon" href="img/favicon-16.ico" type="image/x-icon">
+
+	<!-- Taking care of NoScript -->
+	<noscript>
+    <div id="noscript">
+    	Looks like you don't have Javascript enabled&mdash;what's up with that?
+    </div>
+    <style type="text/css">
+        * { visibility: hidden; }
+        #noscript { 
+            visibility: visible !important; 
+            margin: 10px;
+        }
+    </style>
+  </noscript>
+</head>
+<!-- CONTENT 
+	===========================================================================
+-->
+<body>
+	<!-- Begin Header -->
+	<div id="header">
+		<!-- NAVBAR
+			====================================================================
+		-->
+		<div class="navbar-wrapper">
+			<!-- Wrap .navbar in .container to center it within parent -->
+			<div class="container">
+				<div class="navbar navbar-inverse navbar-fixed">
+					<div class="navbar-inner">
+						<!-- Collapse Navbar if screen is too small -->
+						<button type="button" class="btb btn-navbar collapsed" data-toggle="collapse" data-target=".nav-collapse">
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+						</button>
+						<a class="brand" href="mailto:luisperez@college.harvard.edu">Luis Perez</a>
+						<!-- Contents to be collapsed -->
+						<div id="nav_collapse" class="nav-collapse collapse" style="height: 0px">
+							<ul class="nav pull-right">
+								<li id="about_nav">
+									<a href="#about">about</a>
+								</li>
+								<li id="resume_nav">
+									<a href="#resume">r&eacutesum&eacute</a>
+								</li>
+								<li id="contact_nav">
+									<a href="#contact">contact</a>
+								</li>
+                <li id="projects_nav">
+									<a href="#projects">projects</a>
+								</li>
+							</ul>
+						</div>
+						<!-- /.nav-collapse -->
+					</div>
+					<!-- /.navbar-inner -->
+				</div>
+				<!-- /.navbar -->
+			</div>
+			<!-- /.container -->
+		</div>
+		<!-- /.navbar-wrapper -->
+	</div>
+	<!-- End Header -->
+
+	{{ content }}
+
+
+	<!-- Begin Footer -->
+	<div id="footer">
+		© 2013. Handcoded by <a href="mailto:luisperez@college.harvard.edu">Luis Perez</a> thanks to <a href="http://www.jquery.com/" target="_blank">jQuery</a> and <a href="http://twitter.github.com/bootstrap/" target="_blank">Bootstrap</a>. Inspired by <a href="http://www.yuechenzhao.com/" target="_blank">Yuechen Zhao</a>.
+	</div>
+
+	<!-- Le Javascript -->
+	<!-- Placed at the end of the document so the pages load faster -->
+	<script type="text/javascript" async src="http://www.google-analytics.com/ga.js"></script>
+	<script type="text/javascript" src="js/jquery.min.js"></script>
+	<script type="text/javascript" src="js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="js/jquery.validate.min.js"></script>
+	<script type="text/javascript" src="js/scripts.js"></script>
+	<script type="text/javascript" src="js/ga.js"></script>
+	<script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+    ga('create', 'UA-41782447-3', 'site44.com');
+    ga('send', 'pageview');
+
+  </script>
+</body>
+</html>
